@@ -106,6 +106,7 @@ public class Matrix {
 	public boolean is_orthonormal() {
 		Matrix t = get_transpose(this);
 		Matrix mt = matrix_multiplication(this, t);
+		System.out.println("orthonormal? \n" + mt);
 		if(mt.equals(get_identity(this.size_col))) {
 			return true;
 		} else {
